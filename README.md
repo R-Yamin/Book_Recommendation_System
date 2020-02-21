@@ -48,3 +48,7 @@ Initially, looking at the graph to the left with number of pages over average ra
 Below is the graph for the total ratings over average ratings.
 
 ![](https://github.com/R-Yamin/Book_Recommendation_System/blob/master/Saved_images/ratings_count.png)
+
+### 3e. Summary of EDA
+>* The mean of the ratings falls around 3.9, meaning most of the rankings for this dataset fall around that area, with few books significantly lower, despite the option to vote for lower rankings.
+>* The the most significant relationship for the data is with ratings and the number of rankings given.
