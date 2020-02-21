@@ -71,3 +71,8 @@ The function Books_Recommended() worked by taking a title given, and returning t
 
 Examples of the function being tested can be found at the end of the ML notebook.
 >* [ML Notebook](https://github.com/R-Yamin/Book_Recommendation_System/blob/master/4.%20Machine%20Learning%20and%20Predictive%20Modeling.ipynb)
+
+## Future Improvements
+>* __This was a toy model based on an already prepared dataset.__ This dataset was already put together from the Goodreads.com API. Future datasets would be more updated and perhaps contain time series data to see when ratings were given. 
+>* __Incorporating user data.__ With user history and profile information regarding past ratings, it would be possible to strengthen the current recommendation system to tailor it more to individual users rather than to the books themselves.
+>* __What affect do Authors have?__ With more time and user data, it would likely be possible to see the extent authors play a roll in recommending a book or series.
