@@ -52,3 +52,22 @@ Below is the graph for the total ratings over average ratings.
 ### 3e. Summary of EDA
 >* The mean of the ratings falls around 3.9, meaning most of the rankings for this dataset fall around that area, with few books significantly lower, despite the option to vote for lower rankings.
 >* The the most significant relationship for the data is with ratings and the number of rankings given.
+
+## 4. Machine learning
+>* [ML Notebook](https://github.com/R-Yamin/Book_Recommendation_System/blob/master/4.%20Machine%20Learning%20and%20Predictive%20Modeling.ipynb)
+
+KMeans clustering helped determine how many categories the books could fall into. Below is the Elbow Curve showing that a k value of 5 (for 5 groups) looked best:
+
+![](https://github.com/R-Yamin/Book_Recommendation_System/blob/master/Saved_images/Elbow_curve.png)
+
+After removing 2 outliers, the distribution of books and the groups looked much cleaner and the data was given labels based on the grouping below.
+
+![](https://github.com/R-Yamin/Book_Recommendation_System/blob/master/Saved_images/Kmeans_clustering_final.png)
+
+## 5. Prediction
+With labeled data now, a K-NearestNeighbor model was created w to determine which titles were most similar to each other. A k value of 5 was used again since it was shown to consistently perform well with both training and testing data scores. From this model, the top 5 nearest neighbors were given as a list of indices and a function called Books_Recommended was created.
+
+The function Books_Recommended() worked by taking a title given, and returning the top 5 similar books to that book title. Even if a partial title was given, if there were at most 1 copy of the book within the dataframe, it returned a recommended list. A difficulty arose when multiple titles matched a given input. However, this was resolved by giving the user an error message with a list of possible titles and book IDs. The user could then use a book ID to match the book of interest, and the return value would print the title of the book matching the book ID and the top 5 books recommended.
+
+Examples of the function being tested can be found at the end of the ML notebook.
+>* [ML Notebook](https://github.com/R-Yamin/Book_Recommendation_System/blob/master/4.%20Machine%20Learning%20and%20Predictive%20Modeling.ipynb)
