@@ -29,4 +29,22 @@ Certain columns of the data were unnecessary to explore because they would not t
 
 ### 3a. Most Frequent Book Titles
 Since there were over 13700 book titles, we wanted to check if any repeated. As it turns out, there were 1292 repeated titles. Below is a snippet of the full a horizontal bar graph listing the most frequent titles and how many times they repeated.
-![](
+![](https://github.com/R-Yamin/Book_Recommendation_System/blob/master/Saved_images/book_title_frequency.png)
+The most repeats for a title was 11 repeats, which is not too bad for the dataset. Furthermore, since these repeats were for potential different versions of a book, and since there were only 1292 out of 13 thousand samples, the titles were not removed. It did mean that for the recommendation system that there should be a second way to specify which book.
+
+### 3b. Distribution of Average Ratings
+Below is a graph for the distribution of average ratings. Shown in solid red is the mean and in dashed red lines is the standard deviation. Most of the distribution fell pretty much between 3.6 and 4.2 for average rating.
+![](https://github.com/R-Yamin/Book_Recommendation_System/blob/master/Saved_images/Ratings_distribution.png)
+>* [Statistical Analysis Notebook](https://github.com/R-Yamin/Book_Recommendation_System/blob/master/3.%20Statistical%20Analysis.ipynb)
+
+### 3c. Number of Pages Vs. Ratings
+Below is the graphs for number of pages over average rating and number of pages over total number of reviews:
+
+![](https://github.com/R-Yamin/Book_Recommendation_System/blob/master/Saved_images/Ratings_pages_reviews.png)
+
+Initially, looking at the graph to the left with number of pages over average rating, there seemed to be a positive correlation. However, this correlation was likely do to the fact that longer books would have less overall reviews. This is confirmed with the graph on the right.
+
+### 3d. Average Rating Vs. Total Ratings
+Below is the graph for the total ratings over average ratings.
+
+![](https://github.com/R-Yamin/Book_Recommendation_System/blob/master/Saved_images/ratings_count.png)
