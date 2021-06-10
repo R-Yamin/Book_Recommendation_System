@@ -65,7 +65,7 @@ After removing 2 outliers, the distribution of books and the groups looked much 
 ![](https://github.com/R-Yamin/Book_Recommendation_System/blob/master/Saved_images/Kmeans_clustering_final.png)
 
 ## 5. Prediction
-With labeled data now, a K-NearestNeighbor model was created w to determine which titles were most similar to each other. A k value of 5 was used again since it was shown to consistently perform well with both training and testing data scores. From this model, the top 5 nearest neighbors were given as a list of indices and a function called Books_Recommended was created.
+With labeled data now, a K-NearestNeighbor model was created to determine which titles were most similar to each other. A k value of 5 was used again since it was shown to consistently perform well with both training and testing data scores. From this model, the top 5 nearest neighbors were given as a list of indices and a function called Books_Recommended was created.
 
 The function Books_Recommended() worked by taking a title given, and returning the top 5 similar books to that book title. Even if a partial title was given, if there were at most 1 copy of the book within the dataframe, it returned a recommended list. A difficulty arose when multiple titles matched a given input. However, this was resolved by giving the user an error message with a list of possible titles and book IDs. The user could then use a book ID to match the book of interest, and the return value would print the title of the book matching the book ID and the top 5 books recommended.
 
